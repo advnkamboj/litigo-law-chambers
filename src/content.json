@@ -20,5 +20,83 @@
             "message": "You must agree to the disclaimer to enter the website. Please close this window or tab.",
             "backBtn": "Go Back"
         }
+    },
+    "hero": {
+        "eyebrow": "Est. Dehradun · Uttarakhand",
+        "titleLines": [
+            "Litigo",
+            "Law",
+            "Chamber"
+        ],
+        "tagline": "A new generation law firm delivering best quality legal work — with integrity, passion, and an unwavering commitment to justice.",
+        "cta": {
+            "primary": "Our Services",
+            "secondary": "Free Consultation"
+        },
+        "stats": [
+            {
+                "number": "4+",
+                "label": "High Courts"
+            },
+            {
+                "number": "10+",
+                "label": "Tribunals & Forums"
+            },
+            {
+                "number": "7+",
+                "label": "Practice Areas"
+            },
+            {
+                "number": "∞",
+                "label": "Client Trust"
+            }
+        ]
+    },
+    "about": {
+        "eyebrow": "About the Firm",
+        "titleLine1": "Young Lawyers.",
+        "titleLine2": "Formidable Team.",
+        "paragraphs": [
+            "Litigo Law Chamber is a dynamic law firm based in Uttarakhand, India, constituted by a group of young and passionate lawyers who epitomize the face of the new generation legal practice.",
+            "In a short span, the firm has achieved great heights and handles a niche clientele including various corporate houses, financial institutions, co-operative societies and firms across India.",
+            "With associates in all major cities of India, the firm believes that having superior infrastructure is quintessential in providing the highest quality service to its clients."
+        ],
+        "cta": "Learn More About Us",
+        "quote": {
+            "text": "Our belief was that hard work and exploring new frontiers would lead us to success.",
+            "author": "Naman Kamboj",
+            "designation": "Founder, Litigo Law Chamber"
+        }
+    },
+    "services": {
+        "eyebrow": "What We Do",
+        "title1": "Areas of",
+        "title2": "Practice",
+        "items": [
+            {
+                "title": "Civil Matters",
+                "desc": "Recovery suits, stay & injunction, contractual disputes, property matters, arbitration, motor accidents, consumer cases, and drafting of all types of contracts."
+            },
+            {
+                "title": "Writs",
+                "desc": "Filing writs under Articles 32, 226 & 227 of the Constitution — Fundamental Rights, civil liberties, and challenging governmental actions before High Courts and Supreme Court."
+            },
+            {
+                "title": "Corporate Litigation",
+                "desc": "Petitions before Debt Recovery Tribunals, Appellate Tribunals, High Courts and Supreme Court on behalf of banks, financial institutions, and public organizations."
+            },
+            {
+                "title": "Intellectual Property",
+                "desc": "IPR infringement cases, trademark registration, injunction suits, and comprehensive protection of intellectual property assets across various forums."
+            },
+            {
+                "title": "Criminal Matters",
+                "desc": "Criminal appeals, writs, FIR quashing, bail matters, crimes against women, cheque dishonour, private complaints for cheating, fraud & breach of trust."
+            },
+            {
+                "title": "Alternate Dispute Resolution",
+                "desc": "Arbitration, conciliation and mediation services — providing a refreshing break from prolonged litigation with unparalleled resolution abilities."
+            }
+        ]
     }
 }
