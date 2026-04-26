@@ -2,53 +2,53 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section id="about" className="py-24 lg:py-36 dark:bg-stone-950 bg-white">
+    <section id="about" className="py-24 lg:py-36 bg-background">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Text */}
           <div>
             <div className="flex items-center gap-4 mb-6 reveal opacity-0 translate-y-[30px]">
-              <div className="w-[60px] h-px bg-gradient-to-r from-transparent via-gold to-transparent"></div>
+              <div className="w-[60px] h-px bg-linear-to-r from-transparent via-gold to-transparent"></div>
               <span className="text-xs uppercase tracking-[0.25em] text-gold-400">About the Firm</span>
             </div>
-            <h2 className="font-display text-5xl lg:text-6xl font-light dark:text-stone-100 text-stone-900 mb-8 leading-tight reveal opacity-0 translate-y-[30px]">
-              Young Lawyers.<br/>
-              <span className="italic" className="text-gold">Formidable Team.</span>
+            <h2 className="font-display text-5xl lg:text-6xl font-light text-foreground mb-8 leading-tight reveal opacity-0 translate-y-[30px]">
+              Young Lawyers.<br />
+              <span className="italic text-gold">Formidable Team.</span>
             </h2>
-            <div className="space-y-5 dark:text-stone-400 text-stone-600 font-light leading-relaxed reveal opacity-0 translate-y-[30px]">
+            <div className="space-y-5 text-muted-foreground font-light leading-relaxed reveal opacity-0 translate-y-[30px]">
               <p>Litigo Law Chambers is a dynamic law firm based in Uttarakhand, India, constituted by a group of young and passionate lawyers who epitomize the face of the new generation legal practice.</p>
               <p>In a short span, the firm has achieved great heights and handles a niche clientele including various corporate houses, financial institutions, co-operative societies and firms across India.</p>
               <p>With associates in all major cities of India, the firm believes that having superior infrastructure is quintessential in providing the highest quality service to its clients.</p>
             </div>
             <div className="mt-10 reveal opacity-0 translate-y-[30px]">
-              <a href="#contact" className="inline-flex items-center gap-3 text-xs uppercase tracking-widest transition-colors" className="text-gold">
+              <a href="#contact" className="inline-flex items-center gap-3 text-xs uppercase tracking-widest transition-colors text-gold">
                 Learn More About Us
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </a>
             </div>
           </div>
 
           {/* Right: Quote / Feature Block */}
           <div className="relative reveal opacity-0 translate-y-[30px]">
-            <div className="dark:bg-stone-900 bg-stone-100 p-10 lg:p-14 relative overflow-hidden">
+            <div className="bg-muted p-10 lg:p-14 relative overflow-hidden">
               {/* Decorative corner */}
-              <div className="absolute top-0 right-0 w-24 h-24 border-t border-r" className="border-gold opacity-30"></div>
-              <div className="absolute bottom-0 left-0 w-24 h-24 border-b border-l" className="border-gold opacity-30"></div>
+              <div className="absolute top-0 right-0 w-24 h-24 border-t border-r border-gold opacity-30"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 border-b border-l border-gold opacity-30"></div>
 
               <div className="font-heading text-[8rem] leading-[0.6] text-gold opacity-20 mb-4">"</div>
-              <blockquote className="font-display text-2xl lg:text-3xl font-light italic dark:text-stone-200 text-stone-800 leading-snug mb-6">
+              <blockquote className="font-display text-2xl lg:text-3xl font-light italic text-foreground leading-snug mb-6">
                 Our belief was that hard work and exploring new frontiers would lead us to success.
               </blockquote>
               <div className="flex items-center gap-3">
-                <div className="w-8 h-px" className="bg-gold"></div>
+                <div className="w-8 h-px bg-gold"></div>
                 <div>
-                  <div className="text-sm font-medium dark:text-stone-200 text-stone-800">Naman Kamboj</div>
-                  <div className="text-xs dark:text-stone-500 text-stone-500 tracking-wider">Founder, Litigo Law Chambers</div>
+                  <div className="text-sm font-medium text-foreground">Naman Kamboj</div>
+                  <div className="text-xs text-muted-foreground tracking-wider">Founder, Litigo Law Chambers</div>
                 </div>
               </div>
             </div>
             {/* Offset element */}
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 -z-10" className="bg-gold-dim border border-gold/20"></div>
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 -z-10 bg-gold-dim border border-gold/20"></div>
           </div>
         </div>
       </div>
