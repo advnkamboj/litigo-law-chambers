@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 import ScrollProgress from './components/layout/ScrollProgress';
+import Disclaimer from './components/layout/Disclaimer';
+import WelcomeModal from './components/layout/WelcomeModal';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Services from './components/sections/Services';
@@ -13,13 +16,10 @@ import Team from './components/sections/Team';
 import Values from './components/sections/Values';
 import Contact from './components/sections/Contact';
 
-// Import styles
-// (custom CSS logic moved to index.css and Tailwind classes)
-
 gsap.registerPlugin(ScrollTrigger);
 
 // Wrapper component to use the theme context
-function AppContent() {
+function MainSite() {
   const { isDark } = useTheme();
 
   useEffect(() => {
@@ -80,6 +80,7 @@ function AppContent() {
 
   return (
     <div className="bg-background text-foreground">
+      <WelcomeModal />
       <div className="fixed inset-0 pointer-events-none z-9999 opacity-40 bg-[url('data:image/svg+xml,%3Csvg viewBox=\'0 0 512 512\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'n\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.75\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23n)\' opacity=\'0.04\'/%3E%3C/svg%3E')]"></div>
       <ScrollProgress />
       <Header />
@@ -87,7 +88,7 @@ function AppContent() {
       <About />
       <Services />
       <Courts />
-      <Team />
+      {/* <Team /> */}
       <Values />
       <Contact />
       <Footer />
@@ -95,10 +96,30 @@ function AppContent() {
   );
 }
 
+// Route protector component
+function ProtectedRoute({ children }) {
+  const hasAgreed = localStorage.getItem('disclaimerAgreed') === 'true';
+  const location = useLocation();
+
+  if (!hasAgreed) {
+    return <Navigate to="/disclaimer" state={{ from: location }} replace />;
+  }
+  return children;
+}
+
 export default function App() {
   return (
     <ThemeProvider>
-      <AppContent />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/disclaimer" element={<Disclaimer />} />
+          <Route path="/*" element={
+            <ProtectedRoute>
+              <MainSite />
+            </ProtectedRoute>
+          } />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
