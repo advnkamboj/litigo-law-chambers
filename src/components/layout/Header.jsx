@@ -20,7 +20,7 @@ export default function Header() {
             </div>
             <div>
               <div className="font-display text-lg font-semibold tracking-wide leading-tight text-gold">Litigo</div>
-              <div className="text-[9px] uppercase tracking-[0.2em] dark:text-stone-400 text-stone-500 -mt-0.5">Law Chambers</div>
+              <div className="text-[9px] uppercase tracking-[0.2em] dark:text-stone-400 text-stone-500 -mt-0.5">Law Chamber</div>
             </div>
           </a>
 

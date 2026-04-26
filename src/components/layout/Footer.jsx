@@ -8,10 +8,10 @@ export default function Footer() {
           <div className="w-6 h-6 border border-gold rotate-45 flex items-center justify-center">
             <div className="w-2 h-2 rotate-45 bg-gold"></div>
           </div>
-          <span className="font-display text-sm text-muted-foreground">Litigo Law Chambers</span>
+          <span className="font-display text-sm text-muted-foreground">Litigo Law Chamber</span>
         </div>
         <div className="text-xs text-muted-foreground text-center">
-          © 2024 Litigo Law Chambers. All rights reserved. · Dehradun, Uttarakhand, India
+          © 2024 Litigo Law Chamber. All rights reserved. · Dehradun, Uttarakhand, India
         </div>
         <div className="flex gap-6">
           <a href="#home" className="text-xs uppercase tracking-widest text-muted-foreground hover:text-gold-400 transition-colors">Home</a>

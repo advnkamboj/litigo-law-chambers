@@ -23,7 +23,7 @@ export default function WelcomeModal() {
         <h2 className="font-display text-3xl font-light text-foreground mb-4">Welcome</h2>
         <div className="w-12 h-px bg-gold mx-auto opacity-50 mb-6"></div>
         <p className="text-muted-foreground font-light leading-relaxed mb-8">
-          Welcome to Litigo Law Chambers. We are committed to providing you with expert legal guidance.
+          Welcome to Litigo Law Chamber. We are committed to providing you with expert legal guidance.
         </p>
         <button
           onClick={() => setIsOpen(false)}

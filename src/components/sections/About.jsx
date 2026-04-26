@@ -16,7 +16,7 @@ export default function About() {
               <span className="italic text-gold">Formidable Team.</span>
             </h2>
             <div className="space-y-5 text-muted-foreground font-light leading-relaxed reveal opacity-0 translate-y-[30px]">
-              <p>Litigo Law Chambers is a dynamic law firm based in Uttarakhand, India, constituted by a group of young and passionate lawyers who epitomize the face of the new generation legal practice.</p>
+              <p>Litigo Law Chamber is a dynamic law firm based in Uttarakhand, India, constituted by a group of young and passionate lawyers who epitomize the face of the new generation legal practice.</p>
               <p>In a short span, the firm has achieved great heights and handles a niche clientele including various corporate houses, financial institutions, co-operative societies and firms across India.</p>
               <p>With associates in all major cities of India, the firm believes that having superior infrastructure is quintessential in providing the highest quality service to its clients.</p>
             </div>
@@ -43,7 +43,7 @@ export default function About() {
                 <div className="w-8 h-px bg-gold"></div>
                 <div>
                   <div className="text-sm font-medium text-foreground">Naman Kamboj</div>
-                  <div className="text-xs text-muted-foreground tracking-wider">Founder, Litigo Law Chambers</div>
+                  <div className="text-xs text-muted-foreground tracking-wider">Founder, Litigo Law Chamber</div>
                 </div>
               </div>
             </div>

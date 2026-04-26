@@ -52,7 +52,7 @@ export default function Disclaimer() {
               <p className="mb-4">
                 As per the rules of the Bar Council of India, law firms are not permitted to solicit work and advertise.
                 By clicking the <strong>"I Agree & Enter"</strong> button and accessing this website, you fully accept that you are seeking
-                information of your own accord and volition and that no form of solicitation has taken place by Litigo Law Chambers or its members.
+                information of your own accord and volition and that no form of solicitation has taken place by Litigo Law Chamber or its members.
               </p>
               <p className="mb-4">
                 The information provided under this website is solely available at your request for informational purposes only,
@@ -60,7 +60,7 @@ export default function Disclaimer() {
                 he/she in all cases must seek independent legal advice.
               </p>
               <p>
-                Litigo Law Chambers is not liable for any consequence of any action taken by the user relying on material/information
+                Litigo Law Chamber is not liable for any consequence of any action taken by the user relying on material/information
                 provided under this website.
               </p>
             </div>

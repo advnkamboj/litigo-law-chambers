@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="py-24 lg:py-36 relative overflow-hidden bg-background">
       {/* Dark mode background gradient - isolated to avoid affecting light mode */}
       <div className="absolute inset-0 hidden dark:block pointer-events-none bg-[linear-gradient(135deg,var(--background)_0%,var(--card)_100%)]"></div>
-      
+
       {/* Gold mesh */}
       <div className="absolute inset-0 pointer-events-none opacity-30 dark:opacity-100" style={{ backgroundImage: 'linear-gradient(var(--color-gold-dim) 1px, transparent 1px), linear-gradient(90deg, var(--color-gold-dim) 1px, transparent 1px)', backgroundSize: '60px 60px' }}></div>
       <div className="absolute top-0 left-0 right-0 h-px bg-[linear-gradient(90deg,transparent,var(--color-gold),transparent)] opacity-20 dark:opacity-40"></div>
@@ -23,7 +23,7 @@ export default function Contact() {
               <span className="italic text-gold">Your Case</span>
             </h2>
             <p className="text-muted-foreground font-light leading-relaxed mb-12">
-              Reach out to Litigo Law Chambers for expert legal guidance. Our team is ready to provide dedicated support for your legal needs.
+              Reach out to Litigo Law Chamber for expert legal guidance. Our team is ready to provide dedicated support for your legal needs.
             </p>
 
             {/* Contact Details */}

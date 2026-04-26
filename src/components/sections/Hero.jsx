@@ -26,7 +26,7 @@ export default function Hero() {
           <h1 className="font-display leading-none mb-6 reveal opacity-0 translate-y-[30px]">
             <span className="block text-6xl sm:text-7xl lg:text-9xl font-light text-foreground">Litigo</span>
             <span className="block text-6xl sm:text-7xl lg:text-9xl font-light italic text-gold">Law</span>
-            <span className="block text-6xl sm:text-7xl lg:text-9xl font-light text-foreground">Chambers</span>
+            <span className="block text-6xl sm:text-7xl lg:text-9xl font-light text-foreground">Chamber</span>
           </h1>
 
           {/* Tagline */}
