@@ -1,10 +1,13 @@
 import React from 'react';
+import content from "../../content.json";
 
 export default function Courts() {
+  const data = content.courts;
+
   return (
-    <section id="courts" className="py-24 lg:py-36 dark:bg-stone-950 bg-white relative overflow-hidden">
+    <section id="courts" className="py-24 lg:py-36 bg-background relative overflow-hidden">
       <div className="absolute right-0 top-0 w-72 h-72 opacity-5 pointer-events-none">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#c9a84c" strokeWidth="1">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="var(--color-gold)" strokeWidth="1">
           <circle cx="100" cy="100" r="90" />
           <circle cx="100" cy="100" r="70" />
           <circle cx="100" cy="100" r="50" />
@@ -17,73 +20,40 @@ export default function Courts() {
           <div className="reveal opacity-0 translate-y-[30px]">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-[60px] h-px bg-linear-to-r from-transparent via-gold to-transparent"></div>
-              <span className="text-xs uppercase tracking-[0.25em] text-gold-400">Our Reach</span>
+              <span className="text-xs uppercase tracking-[0.25em] text-gold-400">{data.eyebrow}</span>
             </div>
-            <h2 className="font-display text-5xl lg:text-6xl font-light dark:text-stone-100 text-stone-900 leading-tight">
-              Courts &<br /><span className="italic text-gold">Tribunals</span>
+            <h2 className="font-display text-5xl lg:text-6xl font-light text-foreground leading-tight">
+              {data.title1}<br /><span className="italic text-gold">{data.title2}</span>
             </h2>
-            <p className="mt-6 dark:text-stone-400 text-stone-600 font-light leading-relaxed">
-              From the Supreme Court of India to specialized tribunals, our experienced team practices across the full spectrum of India's judicial hierarchy.
+            <p className="mt-6 text-muted-foreground font-light leading-relaxed">
+              {data.description}
             </p>
             <div className="mt-10">
-              <div className="text-xs uppercase tracking-widest dark:text-stone-500 text-stone-400 mb-4">Primary Office</div>
-              <address className="not-italic dark:text-stone-300 text-stone-700 font-light leading-loose">
-                Opposite SDM Court,<br />
-                District Court Compound,<br />
-                Dehradun, Uttarakhand
+              <div className="text-xs uppercase tracking-widest text-muted-foreground mb-4">{data.address.title}</div>
+              <address className="not-italic text-foreground font-light leading-loose">
+                {data.address.lines.map((line, i) => (
+                  <React.Fragment key={i}>
+                    {line}<br />
+                  </React.Fragment>
+                ))}
               </address>
             </div>
           </div>
 
           {/* Courts list */}
           <div className="space-y-px reveal opacity-0 translate-y-[30px]">
-            <div className="flex items-center gap-5 dark:bg-stone-900/50 bg-stone-50 px-6 py-4 border-l-2 border-gold-400 group hover:dark:bg-stone-900 hover:bg-stone-100 transition-colors">
-              <div className="w-2 h-2 rounded-full shrink-0 bg-gold"></div>
-              <span className="dark:text-stone-300 text-stone-700 font-light text-sm">Supreme Court of India</span>
-            </div>
-            <div className="flex items-center gap-5 dark:bg-stone-900/50 bg-stone-50 px-6 py-4 border-l-2 border-transparent hover:border-gold-400 group hover:dark:bg-stone-900 hover:bg-stone-100 transition-all">
-              <div className="w-2 h-2 rounded-full bg-stone-500 shrink-0"></div>
-              <span className="dark:text-stone-400 text-stone-600 font-light text-sm">High Court of Uttarakhand at Nainital</span>
-            </div>
-            <div className="flex items-center gap-5 dark:bg-stone-900/50 bg-stone-50 px-6 py-4 border-l-2 border-transparent hover:border-gold-400 group hover:dark:bg-stone-900 hover:bg-stone-100 transition-all">
-              <div className="w-2 h-2 rounded-full bg-stone-500 shrink-0"></div>
-              <span className="dark:text-stone-400 text-stone-600 font-light text-sm">High Court of Delhi at Delhi</span>
-            </div>
-            <div className="flex items-center gap-5 dark:bg-stone-900/50 bg-stone-50 px-6 py-4 border-l-2 border-transparent hover:border-gold-400 group hover:dark:bg-stone-900 hover:bg-stone-100 transition-all">
-              <div className="w-2 h-2 rounded-full bg-stone-500 shrink-0"></div>
-              <span className="dark:text-stone-400 text-stone-600 font-light text-sm">High Court of Sikkim at Gangtok</span>
-            </div>
-            <div className="flex items-center gap-5 dark:bg-stone-900/50 bg-stone-50 px-6 py-4 border-l-2 border-transparent hover:border-gold-400 group hover:dark:bg-stone-900 hover:bg-stone-100 transition-all">
-              <div className="w-2 h-2 rounded-full bg-stone-500 shrink-0"></div>
-              <span className="dark:text-stone-400 text-stone-600 font-light text-sm">High Court of Uttar Pradesh at Allahabad</span>
-            </div>
-            <div className="flex items-center gap-5 dark:bg-stone-900/50 bg-stone-50 px-6 py-4 border-l-2 border-transparent hover:border-gold-400 group hover:dark:bg-stone-900 hover:bg-stone-100 transition-all">
-              <div className="w-2 h-2 rounded-full bg-stone-500 shrink-0"></div>
-              <span className="dark:text-stone-400 text-stone-600 font-light text-sm">National Consumer Disputes Redressal Commission, New Delhi</span>
-            </div>
-            <div className="flex items-center gap-5 dark:bg-stone-900/50 bg-stone-50 px-6 py-4 border-l-2 border-transparent hover:border-gold-400 group hover:dark:bg-stone-900 hover:bg-stone-100 transition-all">
-              <div className="w-2 h-2 rounded-full bg-stone-500 shrink-0"></div>
-              <span className="dark:text-stone-400 text-stone-600 font-light text-sm">Central Administrative Tribunal at Nainital</span>
-            </div>
-            <div className="flex items-center gap-5 dark:bg-stone-900/50 bg-stone-50 px-6 py-4 border-l-2 border-transparent hover:border-gold-400 group hover:dark:bg-stone-900 hover:bg-stone-100 transition-all">
-              <div className="w-2 h-2 rounded-full bg-stone-500 shrink-0"></div>
-              <span className="dark:text-stone-400 text-stone-600 font-light text-sm">Debt Recovery Tribunal, Dehradun</span>
-            </div>
-            <div className="flex items-center gap-5 dark:bg-stone-900/50 bg-stone-50 px-6 py-4 border-l-2 border-transparent hover:border-gold-400 group hover:dark:bg-stone-900 hover:bg-stone-100 transition-all">
-              <div className="w-2 h-2 rounded-full bg-stone-500 shrink-0"></div>
-              <span className="dark:text-stone-400 text-stone-600 font-light text-sm">District Court & Labour Courts, Dehradun</span>
-            </div>
-            <div className="flex items-center gap-5 dark:bg-stone-900/50 bg-stone-50 px-6 py-4 border-l-2 border-transparent hover:border-gold-400 group hover:dark:bg-stone-900 hover:bg-stone-100 transition-all">
-              <div className="w-2 h-2 rounded-full bg-stone-500 shrink-0"></div>
-              <span className="dark:text-stone-400 text-stone-600 font-light text-sm">Real Estate Regulatory Authority & Appellate Tribunal, Dehradun</span>
-            </div>
-            <div className="flex items-center gap-5 dark:bg-stone-900/50 bg-stone-50 px-6 py-4 border-l-2 border-transparent hover:border-gold-400 group hover:dark:bg-stone-900 hover:bg-stone-100 transition-all">
-              <div className="w-2 h-2 rounded-full bg-stone-500 shrink-0"></div>
-              <span className="dark:text-stone-400 text-stone-600 font-light text-sm">District & State Consumer Disputes Redressal Forums</span>
-            </div>
+            {data.items.map((court, i) => (
+              <div key={i} className={`flex items-center gap-5 px-6 py-4 border-l-2 transition-all group bg-muted/30 hover:bg-muted ${court.primary ? 'border-gold' : 'border-transparent hover:border-gold'}`}>
+                <div className={`w-2 h-2 rounded-full shrink-0 ${court.primary ? 'bg-gold' : 'bg-muted-foreground'}`}></div>
+                <span className={`font-light text-sm ${court.primary ? 'text-foreground' : 'text-muted-foreground group-hover:text-foreground'}`}>
+                  {court.name}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
   );
 }
+

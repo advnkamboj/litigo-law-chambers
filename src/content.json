@@ -21,6 +21,20 @@
             "backBtn": "Go Back"
         }
     },
+    "header": {
+        "logo": {
+            "title": "Litigo",
+            "subtitle": "Law Chamber"
+        },
+        "nav": [
+            { "label": "About", "href": "#about" },
+            { "label": "Services", "href": "#services" },
+            { "label": "Courts", "href": "#courts" },
+            { "label": "Values", "href": "#values" },
+            { "label": "Contact", "href": "#contact" }
+        ],
+        "cta": "Consult Now"
+    },
     "hero": {
         "eyebrow": "Est. Dehradun · Uttarakhand",
         "titleLines": [
@@ -97,6 +111,145 @@
                 "title": "Alternate Dispute Resolution",
                 "desc": "Arbitration, conciliation and mediation services — providing a refreshing break from prolonged litigation with unparalleled resolution abilities."
             }
+        ]
+    },
+    "courts": {
+        "eyebrow": "Our Reach",
+        "title1": "Courts &",
+        "title2": "Tribunals",
+        "description": "From the Supreme Court of India to specialized tribunals, our experienced team practices across the full spectrum of India's judicial hierarchy.",
+        "address": {
+            "title": "Primary Office",
+            "lines": [
+                "Opposite SDM Court,",
+                "District Court Compound,",
+                "Dehradun, Uttarakhand"
+            ]
+        },
+        "items": [
+            { "name": "Supreme Court of India", "primary": true },
+            { "name": "High Court of Uttarakhand at Nainital" },
+            { "name": "High Court of Delhi at Delhi" },
+            { "name": "High Court of Sikkim at Gangtok" },
+            { "name": "High Court of Uttar Pradesh at Allahabad" },
+            { "name": "National Consumer Disputes Redressal Commission, New Delhi" },
+            { "name": "Central Administrative Tribunal at Nainital" },
+            { "name": "Debt Recovery Tribunal, Dehradun" },
+            { "name": "District Court & Labour Courts, Dehradun" },
+            { "name": "Real Estate Regulatory Authority & Appellate Tribunal, Dehradun" },
+            { "name": "District & State Consumer Disputes Redressal Forums" }
+        ]
+    },
+    "values": {
+        "eyebrow": "Why Choose Us",
+        "title1": "Values &",
+        "title2": "Strengths",
+        "items": [
+            {
+                "letter": "I",
+                "title": "Integrity",
+                "desc": "Every act is taken in a manner that is fair, honest, and in the best interest of the client and society. The cornerstone of all our dealings."
+            },
+            {
+                "letter": "P",
+                "title": "Passion",
+                "desc": "A tremendous zeal for law and justice. Emotional attachment with work inspires every member to give their best with enthusiasm."
+            },
+            {
+                "letter": "R",
+                "title": "Responsibility",
+                "desc": "We realize every case can have profound ramifications on the lives of people and the functioning of organizations. We never take that lightly."
+            },
+            {
+                "letter": "T",
+                "title": "Trust",
+                "desc": "Members are trusted with their work while appropriate checks ensure quality is never compromised. Openness and free flow of ideas define our culture."
+            }
+        ],
+        "strengths": [
+            "Pool of experienced advocates in diverse fields",
+            "Unparalleled mediation and conciliation abilities",
+            "Strong hold over constitutional provisions",
+            "Commitment to client's solace & satisfaction"
+        ]
+    },
+    "contact": {
+        "eyebrow": "Get In Touch",
+        "title1": "Let's Discuss",
+        "title2": "Your Case",
+        "description": "Reach out to Litigo Law Chamber for expert legal guidance. Our team is ready to provide dedicated support for your legal needs.",
+        "details": [
+            {
+                "label": "Chamber",
+                "address": "Opposite SDM Court, District Court Compound,\nDehradun, Uttarakhand"
+            },
+            {
+                "label": "Office",
+                "address": "11-DS, 2nd Floor, PLS Plaza,\n58 Gandhi Road, Dehradun, Uttarakhand"
+            },
+            {
+                "label": "Email",
+                "emails": ["naman@lawyer.com", "litigolaw@gmail.com"]
+            },
+            {
+                "label": "Phone",
+                "phones": ["+91-8126630631", "+91-9868650636"]
+            }
+        ],
+        "form": {
+            "title": "Send a Message",
+            "fields": {
+                "name": "Full Name",
+                "email": "Email",
+                "phone": "Phone",
+                "matter": "Matter Type",
+                "description": "Brief Description"
+            },
+            "placeholders": {
+                "name": "Your name",
+                "email": "your@email.com",
+                "phone": "+91 XXXXX XXXXX",
+                "matter": "Select practice area",
+                "description": "Briefly describe your legal matter..."
+            },
+            "button": "Send Enquiry",
+            "confidential": "Your information is confidential and protected."
+        }
+    },
+    "footer": {
+        "logoText": "Litigo Law Chamber",
+        "copyright": "© 2024 Litigo Law Chamber. All rights reserved. · Dehradun, Uttarakhand, India",
+        "links": [
+            { "label": "Home", "href": "#home" },
+            { "label": "Services", "href": "#services" },
+            { "label": "Contact", "href": "#contact" }
+        ]
+    },
+    "team": {
+        "eyebrow": "The People",
+        "title1": "Our",
+        "title2": "Team",
+        "founder": {
+            "name": "Naman Kamboj",
+            "role": "Founder & Director",
+            "badge": "Founder & Managing Partner",
+            "bio": "Mr. Naman Kamboj is the founder of the firm and oversees key management and operational procedures. With an impressive background including Research Assistant cum Law Clerkship to Hon'ble Chief Justice Dipak Misra of the Supreme Court of India, he effectively handles complex litigations across High Courts and the Supreme Court.",
+            "expertise": [
+                { "label": "Civil Litigation" },
+                { "label": "Criminal Matters" },
+                { "label": "High Courts" },
+                { "label": "Supreme Court" },
+                { "label": "SC Law Clerk", "highlight": true }
+            ]
+        },
+        "associates": [
+            { "role": "Senior Associate", "name": "Narendra Singh", "desc": "Trial including Original Civil Suits" },
+            { "role": "Associate", "name": "Prasanna Karnatak", "desc": "Appellate Jurisdiction" },
+            { "role": "Associate", "name": "Divyansh Rohilla", "desc": "Original Civil Suits & Other Forums" },
+            { "role": "Associate", "name": "Siddharth Gupta", "desc": "Trial including Legal Research" },
+            { "role": "Associate", "name": "Ms. Namrata", "desc": "Legal Compliances" },
+            { "role": "Clerk", "name": "Karan Kumar", "desc": "High Court Work at Nainital" },
+            { "role": "Clerk", "name": "Vijay Singh", "desc": "District Courts & Forums at Dehradun" }
         ]
     }
 }
